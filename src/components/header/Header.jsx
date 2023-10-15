@@ -1,13 +1,12 @@
-// import './header.scss'
-// import Logo from '../../Assets/Logo.png'
+import './header.scss'
+import Logo from '../../Assets/Logo.png'
 
-// function Header() {
-//     return (
-//     <div className='Navbar'>
-//                 <img src={Logo} alt='Logo du site Kasa' />
-//         </div>
-//     );
-// }
+function Header() {
+    return (
+        <header className='Header'>
+        <div className='Header_logo'><img src={Logo} alt='Logo Header' /></div>
+    </header>
+ ); 
+}
 
-
-// export default Header;
+export default Header;

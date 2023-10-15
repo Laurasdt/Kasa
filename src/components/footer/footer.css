@@ -15,4 +15,11 @@
 .Footer_img img {
   height: 60px;
   width: 163px;
+}
+.Footer_txt {
+  height: 46px;
+  text-align: center;
+}
+.Footer_txt p {
+  margin-top: 25px;
 }/*# sourceMappingURL=footer.css.map */
