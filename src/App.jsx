@@ -2,19 +2,21 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
-/* import About from './about/about';
-import NotFound from './notFound/NotFound'; */
+import About from './pages/about/About';
+import NotFound from './pages/notFound/NotFound'; 
 
 function App() {
   return (
     <>
     <BrowserRouter>
-      <Header />
+     <div className='blocPage'>
+       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-      {/*  <Route path='/about' element={<About />} />
-        <Route path='*' element={<NotFound />} /> */}
+      <Route path='/About' element={<About />} />
+      <Route path='*' element={<NotFound />} />
       </Routes>
+      </div>
       <Footer /> 
     </BrowserRouter>
     </>

@@ -1,0 +1,11 @@
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        border-radius: 25px;
+        height: 223px;
+        width: 95%;
+        object-fit: cover;
+    }
+}

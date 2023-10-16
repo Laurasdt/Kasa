@@ -1,3 +1,29 @@
 .Header {
   margin: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header .Header_logo {
+  height: 100%;
+}
+.Header .Nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.Header .Nav .accueilActive {
+  text-decoration: underline;
+  color: #FF6060;
+}
+.Header .Nav .accueil {
+  color: #FF6060;
+}
+.Header .Nav .aboutActive {
+  text-decoration: underline;
+  color: #FF6060;
+}
+.Header .Nav .about {
+  color: #FF6060;
 }/*# sourceMappingURL=header.css.map */

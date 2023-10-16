@@ -1,3 +1,31 @@
 .Header {
     margin: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    .Header_logo{
+        height: 100%;
+    }
+    .Nav{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        
+         .accueilActive{
+            text-decoration: underline;
+            color: #FF6060;
+         }
+         .accueil{
+            color: #FF6060;
+         }
+         .aboutActive{
+            text-decoration: underline;
+            color: #FF6060;
+         }
+         .about
+         {
+            color: #FF6060;
+         }
+    }
 }

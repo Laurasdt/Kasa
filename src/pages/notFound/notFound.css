@@ -1,1 +1,17 @@
-/*# sourceMappingURL=notFound.css.map */
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notFound_logo {
+  margin: 65px;
+}
+.notFound_txt {
+  color: #FF6060;
+  font-size: 24px; /* Vous pouvez ajuster la valeur de font-size selon vos besoins */
+  font-weight: 400;
+}
+.notFound_link {
+  margin: 100px;
+}/*# sourceMappingURL=notFound.css.map */
