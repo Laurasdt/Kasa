@@ -1,0 +1,12 @@
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About img {
+  border-radius: 25px;
+  height: 223px;
+  width: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=about.css.map */

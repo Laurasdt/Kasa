@@ -3,7 +3,8 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import NotFound from './pages/notFound/NotFound'; 
+import NotFound from './pages/notFound/NotFound';
+import Banner from './components/banner/Banner'; 
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
      <div className='blocPage'>
        <Header />
+       <Banner />
       <Routes>
         <Route path='/' element={<Home />} />
       <Route path='/About' element={<About />} />

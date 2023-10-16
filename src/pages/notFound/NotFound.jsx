@@ -8,8 +8,8 @@ function NotFound() {
     return (
        
         <div className='notFound'>
-            <div className='notFound_logo'><img src={Logo} alt='Erreur 404'/></div>
-                <p className='notFound_txt'>Oups ! La page que vous demandez n'existe pas.</p>
+            <img src={Logo} alt='Erreur 404'/>
+            <p>Oups ! La page que vous demandez n'existe pas.</p>
             <Link className='notFound_link' to='/'>Retourner sur la page d'accueil</Link>
              </div>
     )

@@ -4,14 +4,23 @@
   align-items: center;
   justify-content: center;
 }
-.notFound_logo {
+.notFound img {
   margin: 65px;
 }
-.notFound_txt {
+.notFound p {
   color: #FF6060;
-  font-size: 24px; /* Vous pouvez ajuster la valeur de font-size selon vos besoins */
+  font-size: 24px;
   font-weight: 400;
 }
 .notFound_link {
   margin: 100px;
+}
+.notFound_link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .notFound_txt {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=notFound.css.map */

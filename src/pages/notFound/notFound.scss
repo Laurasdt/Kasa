@@ -3,16 +3,29 @@
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    &_logo {
+    img {
         margin: 65px;
     }
-    &_txt {
+    p {
         color: #FF6060;
-        font-size: 24px; /* Vous pouvez ajuster la valeur de font-size selon vos besoins */
+        font-size: 24px; 
         font-weight: 400;
     }
     &_link {
         margin: 100px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
-
 }
+
+@media screen and (max-width: 768px) {
+   .notFound {
+        &_txt {
+            font-size: 18px;
+     }
+   }
+}
+   
+
+
