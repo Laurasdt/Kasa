@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../card/Card';
 
-const Cards = () => {
+const CardList = () => {
   const [housings, setHousings] = useState([]);
 
   useEffect(() => {
-    fetch('https://chloegerry.github.io/Kasa-P8/data.json')
+    fetch('https://laurasdt.github.io/Kasa-P8/data.json')
       .then((result) => result.json())
       .then((housings) => setHousings(housings))
       .catch((error) => console.log(error));
@@ -26,4 +26,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default CardList;
