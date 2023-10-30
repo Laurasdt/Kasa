@@ -4,10 +4,10 @@ import "./card.scss"
 const Card = (props) => {
   
         return (
-          <div className='card'>
+          <div className='Card'>
             {props.logement.id}
             {props.logement.title}
-            
+            <img src={props.logement.cover} alt={props.logement.title} />
           </div>
         );
     

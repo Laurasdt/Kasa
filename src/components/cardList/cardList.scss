@@ -1,0 +1,15 @@
+.card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        border-radius: 25px;
+        overflow: hidden;
+        background-color: #f6f6f6;
+        padding-top: 2em;
+        padding-bottom: 2em;
+  }
+  
+	// &:hover {
+	//   img {
+	// 	transform: scale(1.05);
+	//   }

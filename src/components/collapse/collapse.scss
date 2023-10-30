@@ -15,16 +15,19 @@
       color : white;
       margin-left: 20px;
     }
-    .arrow_up {
-      transform: rotate(0deg);
-      margin-right: 20px;
+    .arrow {
+      transition: all 0.2s ease-in-out;
+      &_up {
+        transform: rotate(0deg);
+        margin-right: 20px;
+      }
+      &_down {
+        transform: rotate(180deg);
+        margin-right: 20px;
+      }
     }
-  .arrow_down {
-      transform: rotate(180deg);
-      margin-right: 20px;
-    }
-
   }
+
   .content{
     display: flex;
     flex-direction: column;
