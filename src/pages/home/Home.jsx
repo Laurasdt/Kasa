@@ -9,6 +9,7 @@ function Home() {
         <main className='home'>
             <Banner bannerImg={bannerImg} alt="Bannière de la page Home" text="Chez vous, partout et ailleurs"/>
             <CardList /> 
+            
         </main>
        
     )
