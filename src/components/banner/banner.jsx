@@ -4,10 +4,10 @@ import "./banner.scss"
 const Banner = (props) => {
   
         return (
-          <div className='Banner'>
+          <section className='Banner'>
             <img src={props.bannerImg} alt={props.alt} />
             <h1>{props.text}</h1>
-          </div>
+          </section>
         );
     
   } ;
