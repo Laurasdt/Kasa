@@ -1,0 +1,28 @@
+.Collapses{
+    display: flex;
+    flex-direction: row;
+    .Collapse {
+        &__title {
+        background-color: #FF6060;
+        color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+        h3 {
+            color : white;
+            margin-left: 20px;
+        }}
+    //   .arrow {
+    //     transition: all 0.2s ease-in-out;
+    //     &_up {
+    //       transform: rotate(0deg);
+    //       margin-right: 20px;
+    //     }
+    //     &_down {
+    //       transform: rotate(180deg);
+    //       margin-right: 20px;
+    //     }
+}
