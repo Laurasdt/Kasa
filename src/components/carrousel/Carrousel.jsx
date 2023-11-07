@@ -1,7 +1,7 @@
 import './carrousel.scss';
 import { useState } from 'react';
 import ArrowForward from '../../Assets/ArrowForward.png'
-import ArrowBack from '../../Assets/ArrowForward.png'
+import ArrowBack from '../../Assets/ArrowBack.png'
 
 const Carrousel = ({ slides }) => {
   const slidesLength = slides.length;
