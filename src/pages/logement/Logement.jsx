@@ -22,11 +22,23 @@ function LogementPage(props) {
   return (
     <section className='LogementPage'>
       <Carrousel slides={logement.pictures} />
-      <h1>{logement.title}</h1>
-      <h2>{logement.location}</h2>
-      <Rating rating={logement.rating} />
-      <User name={logement.host.name} profilePicture={logement.host.picture} />
-      <Tags tags={logement.tags} />
+      <div className='Blocs'>
+       
+      <div className='BlocTop'>
+        <div className='Titles'>
+        <h1>{logement.title}</h1>
+        <h2>{logement.location}</h2>
+        </div>
+        <User name={logement.host.name} profilePicture={logement.host.picture} />
+      </div>
+      
+        
+    <div className='BlocBottom'>
+      <Tags className='Tags' tags={logement.tags} />
+      <Rating className='Rating' rating={logement.rating} />
+     </div>
+
+      </div>
       <LogementCollapse
           collapseDescription={collapseDescription}
           collapseEquipement={collapseEquipement}
