@@ -18,8 +18,17 @@ a{
   font-size: 24px;
 }
 
+#root {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .blocPage{
   max-width: 1440px;
+  width: 100%;
   min-width: 320px;
-  margin: 25px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }

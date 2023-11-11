@@ -1,17 +1,11 @@
-// .card-container {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   justify-content: space-between;
-//   border-radius: 25px;
-//   overflow: hidden;
-//   background-color: #f6f6f6;
-//   width: 95%;
-//   flex-direction: column;
-// }
 
 .Cards {
   display: flex;
   justify-content: center;
+  margin: 40px;
+  @media screen and (max-width: 768px){
+    margin: 0px ;
+  }
 }
 
 .card-container {
@@ -20,8 +14,14 @@
   gap: 20px;
   justify-content: center;
   border-radius: 25px;
-  overflow: hidden;
   background-color: #f6f6f6;
-  width: 95%;
+  width: 100%;
+  padding: 30px 30px;
   margin-bottom: 35px;
+  @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+  }
 }

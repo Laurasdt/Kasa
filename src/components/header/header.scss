@@ -4,14 +4,30 @@
     height: 70px;
     display: flex;
     justify-content: space-between; 
-    align-items: center;
+    align-items: center; 
+    @media screen and (max-width: 768px){
+        height: 50px;
+        
+        }
     .Header_logo{
         height: 100%;
+        img {
+            object-fit: contain;
+            height: 80%;
+        
+        }
     }
     .Nav{
         display: flex;
         flex-direction: row;
         gap: 30px;
+        @media screen and (max-width: 768px){
+            text-transform: uppercase;
+            gap: 15px;
+            a {
+                font-size: 15px;
+            }
+        }
          .accueilActive{
             text-decoration: underline;
          }
@@ -21,3 +37,5 @@
          }
     }
 }
+
+
