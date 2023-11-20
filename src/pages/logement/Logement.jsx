@@ -24,21 +24,20 @@ function LogementPage(props) {
       <Carrousel slides={logement.pictures} />
       <div className='Blocs'>
        
-      <div className='BlocTop'>
         <div className='Titles'>
         <h1>{logement.title}</h1>
         <h2>{logement.location}</h2>
+        <Tags className='Tags' tags={logement.tags} />
         </div>
-        <User name={logement.host.name} profilePicture={logement.host.picture} />
-      </div>
       
         
-    <div className='BlocBottom'>
-      <Tags className='Tags' tags={logement.tags} />
+    <div className='BlocUser'>
+    <User name={logement.host.name} profilePicture={logement.host.picture} />
       <Rating className='Rating' rating={logement.rating} />
      </div>
 
       </div>
+      
       <LogementCollapse
           collapseDescription={collapseDescription}
           collapseEquipement={collapseEquipement}
@@ -48,3 +47,4 @@ function LogementPage(props) {
 }
 
 export default LogementPage;
+

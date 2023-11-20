@@ -7,11 +7,16 @@
             border-radius: 25px;
             overflow: hidden; 
             position: relative;
+            @media screen and (max-width: 768px) {
+                height: 255px;
+                width: 335px;
+                border-radius: 10px;
+                margin: 20px;
+            }
         }
         .ArrowBack, .ArrowForward {
             cursor: pointer;
             position: absolute;
-            // top: 35%;
             top: 50%;     
             transform: translateY(-50%);
         }

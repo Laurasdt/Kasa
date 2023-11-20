@@ -1,43 +1,58 @@
 .LogementPage {
     margin: 40px;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
     .Blocs {
         display: flex;
         justify-content: space-between;
-        
-        flex-direction: column;
-        .BlocTop {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        flex-direction: row;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap:20px;
+        }
             .Titles {
                 display: flex;
                 flex-direction: column;
+                font-weight: 500;
+                gap:20px;
+                @media screen and (max-width: 768px) {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                  
+                }
                 h1 {
                     color: #FF6060;
                     font-size: 36px;
                     font-weight: 500;
                     font-family: sans-serif;
-                    margin-bottom: 10px;
+                    margin : 0;
+                    @media screen and (max-width: 768px) {
+                        font-size: 18px;
+                    }
                 }
                 h2 {
                     color: #FF6060;
                     font-size: 18px;
                     font-family: sans-serif;
                     font-weight: 500;
+                    margin: 0px;;
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                    }
                 }
             }
-         }
-         .BlocBottom {
+         
+         .BlocUser {
             display: flex; 
-            align-items: center; 
-     
-            .Rating {
-                /* Adjust the styles for the Rating component as needed */
-                margin-left: auto; /* Push Rating to the right */
-            }
-            .Tags {
-                margin-right: auto; /* Push Tags to the left */
-            }
+            flex-direction: column;
+            gap:20px;
+            @media screen and (max-width: 768px) {
+                flex-direction: row-reverse;
+             }
         }
     }
 }
+
+
+  

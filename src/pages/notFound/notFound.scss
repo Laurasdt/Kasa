@@ -3,29 +3,36 @@
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
+    
     img {
         margin: 65px;
+        @media screen and (max-width: 768px) {
+            width: 198px;
+            margin: 80px;
+        }
     }
     p {
         color: #FF6060;
         font-size: 24px; 
         font-weight: 400;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+            width: 260px;
+            text-align: center;
+        }
     }
     &_link {
         margin: 100px;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            margin: 60px;
+        }
         &:hover {
             text-decoration: underline;
         }
     }
 }
 
-@media screen and (max-width: 768px) {
-   .notFound {
-        &_txt {
-            font-size: 18px;
-     }
-   }
-}
-   
+
 
 

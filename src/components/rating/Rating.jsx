@@ -1,6 +1,6 @@
 import React from 'react';
-import StarActive from '../../Assets/starActive.png';
-import StarInactive from '../../Assets/starInactive.png';
+import StarActive from '../../Assets/starRouge.png';
+import StarInactive from '../../Assets/starGrise.png';
 import './rating.scss';
 
 const Rating = ({ rating = 0 }) => {
