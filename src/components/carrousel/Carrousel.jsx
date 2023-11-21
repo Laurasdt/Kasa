@@ -22,10 +22,9 @@ const Carrousel = ({ slides }) => {
         <div key={index} className="Carrousel__container">
           {index === place && (
             <div>
-              <img className='Slide'src={slide} alt="Photo du logement"/>
+              <img className='Slide' src={slide} alt="Photo du logement"/>
               {showArrows && (
                 <>
-             
                   <img
                     className='ArrowBack'
                     src={ArrowBack}
@@ -38,10 +37,12 @@ const Carrousel = ({ slides }) => {
                     alt="flèche next"
                     onClick={SlideForward}
                   />
-                
                 </>
-                )}
-           </div>
+              )}
+              <div className="SlideCounter">
+                {`${index + 1}/${slidesLength}`}
+              </div>
+            </div>
           )}
         </div>
       ))}

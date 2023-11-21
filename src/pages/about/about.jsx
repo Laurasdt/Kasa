@@ -1,6 +1,6 @@
 import "./about.scss";
 import Collapse from '../../components/collapse/Collapse';
-import React, { useState } from 'react';
+import React from 'react';
 import Banner from '../../components/banner/Banner'; 
 import Img from '../../Assets/ImageSource2.png';
 
@@ -33,7 +33,7 @@ export default function ParentComponent() {
     return (
 		<main>
 		<Banner bannerImg={Img} text="" alt="Bannière de la page About" />
-        <section>
+        <section className="collapses">
           {items.map((item) => (
             <Collapse
               key={item.id}

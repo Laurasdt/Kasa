@@ -6,24 +6,37 @@
             object-fit: cover;
             border-radius: 25px;
             overflow: hidden; 
-            position: relative;
             @media screen and (max-width: 768px) {
                 height: 255px;
-                width: 335px;
                 border-radius: 10px;
-                margin: 20px;
-            }
+          }
         }
         .ArrowBack, .ArrowForward {
             cursor: pointer;
             position: absolute;
             top: 50%;     
             transform: translateY(-50%);
+            height: 80px;
+            @media screen and (max-width: 768px) {
+                height: 24px;
+          }
         }
         .ArrowBack {
             left: 10px; 
         }
         .ArrowForward {
             right: 10px; 
+        }
+        .SlideCounter {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white; 
+            font-size: 16px;
+            margin-bottom: 20px;
+            @media screen and (max-width: 768px) {
+                display: none;
+          }
         }
     }

@@ -12,8 +12,6 @@ import './logement.scss';
 function LogementPage(props) {
   const { id } = useParams();
   const logement = data.find((logement) => logement.id === id);
-  const collapseDescription = logement ? logement.description : "";
-  const collapseEquipement = logement ? logement.equipments : "";
 
   if (logement === undefined) {
     return <NotFound />;
@@ -39,8 +37,8 @@ function LogementPage(props) {
       </div>
       
       <LogementCollapse
-          collapseDescription={collapseDescription}
-          collapseEquipement={collapseEquipement}
+          description={logement ? logement.description : ""}
+          equipement={logement ? logement.equipments : ""}
         />
     </section>
   );

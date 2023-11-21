@@ -1,12 +1,9 @@
 .collapse{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  margin-left: 75px;
-  margin-right: 75px;
+  width: 100%;
   @media screen and (max-width: 768px){
-    margin-left: 30px;
-    margin-right: 30px;
+
     
   }
   .header{
@@ -28,34 +25,35 @@
     }
     .arrow {
       transition: all 0.2s ease-in-out;
+      margin-right: 20px;
       @media screen and (max-width: 768px){
         height: 10px;
       }
       &_up {
         transform: rotate(0deg);
-        margin-right: 20px;
+        
       }
       &_down {
         transform: rotate(180deg);
-        margin-right: 20px;
+        
       }
     }
   }
 
   .content{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
     letter-spacing: 1px;
     color: #FF6060;
     background: #F6F6F6;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    .content-item {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 20px;
     @media screen and (max-width: 768px){
       font-size: 13px;
     }
+    .content-item {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      p{ margin: 0;}
     }
   }
 }

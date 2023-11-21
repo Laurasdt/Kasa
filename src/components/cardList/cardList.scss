@@ -2,9 +2,9 @@
 .Cards {
   display: flex;
   justify-content: center;
-  margin: 40px;
+  
   @media screen and (max-width: 768px){
-    margin: 0px ;
+    
   }
 }
 
@@ -23,5 +23,6 @@
     flex-direction: column;
     background-color: white;
     margin: 0;
+    padding: 0;
   }
 }
