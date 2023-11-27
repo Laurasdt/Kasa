@@ -6,10 +6,10 @@ import NotFound from '../notFound/NotFound';
 import Rating from '../../components/rating/Rating';
 import User from '../../components/User/User';
 import Tags from '../../components/tags/Tags';
-import LogementCollapse from '../../components/logementCollapse/LogementCollapse'; 
+import { LogementCollapse } from '../../components/collapse/Collapse'; 
 import './logement.scss';
 
-function LogementPage(props) {
+function LogementPage() {
   const { id } = useParams();
   const logement = data.find((logement) => logement.id === id);
 

@@ -1,60 +1,83 @@
-.collapse{
+.collapse {
   display: flex;
   flex-direction: column;
   width: 100%;
-  @media screen and (max-width: 768px){
 
-    
+  @media screen and (max-width: 768px) {
+    // Add mobile styles if needed
   }
-  .header{
-    background-color: #FF6060;
+
+  .header {
+    background-color: #ff6060;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
       height: 30px;
     }
+
     h3 {
-      color : white;
+      color: white;
       margin-left: 20px;
-      @media screen and (max-width: 768px){
+
+      @media screen and (max-width: 768px) {
         font-size: 13px;
       }
     }
+
     .arrow {
       transition: all 0.2s ease-in-out;
       margin-right: 20px;
-      @media screen and (max-width: 768px){
+
+      @media screen and (max-width: 768px) {
         height: 10px;
       }
+
       &_up {
         transform: rotate(0deg);
-        
       }
+
       &_down {
         transform: rotate(180deg);
-        
       }
     }
   }
 
-  .content{
+  .content {
     letter-spacing: 1px;
-    color: #FF6060;
-    background: #F6F6F6;
+    color: #ff6060;
+    background: #f6f6f6;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
     padding: 20px;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
       font-size: 13px;
     }
+
     .content-item {
       display: flex;
       flex-direction: column;
-      gap:10px;
-      p{ margin: 0;}
+      gap: 10px;
+
+      p {
+        margin: 0;
+      }
     }
   }
 }
 
+.Collapses {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px;
+  gap: 40px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin: 20px 0px;
+    gap: 20px;
+  }
+}

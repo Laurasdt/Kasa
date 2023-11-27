@@ -2,13 +2,14 @@ import './collapse.scss';
 import React, { useState } from 'react';
 import arrow from '../../Assets/Arrow.png';
 
+
 export default function Collapse({ title, content }) {
-  const [isOpen, setOpen]= useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   function toggleCollapse() {
     setOpen((prev) => !prev);
   }
-  
+
   return (
     <div className='collapse'>
       <div className='header' onClick={toggleCollapse}>
@@ -20,17 +21,17 @@ export default function Collapse({ title, content }) {
         />
       </div>
       {isOpen && (
-        <div className="content">
+        <div className='content'>
           {Array.isArray(content) ? (
             content.map((item, index) => {
               return (
-                <div key={index} className="content-item">
+                <div key={index} className='content-item'>
                   <p>{item}</p>
                 </div>
               );
             })
           ) : (
-            <div className="content-item">
+            <div className='content-item'>
               <p>{content}</p>
             </div>
           )}
@@ -40,4 +41,11 @@ export default function Collapse({ title, content }) {
   );
 }
 
-
+export function LogementCollapse({ description, equipement }) {
+  return (
+    <div className='Collapses'>
+      <Collapse key='0' title='Description' content={description} />
+      <Collapse key='1' title='Equipements' content={equipement} />
+    </div>
+  );
+}
