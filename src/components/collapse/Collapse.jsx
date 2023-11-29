@@ -40,12 +40,3 @@ export default function Collapse({ title, content }) {
     </div>
   );
 }
-
-export function LogementCollapse({ description, equipement }) {
-  return (
-    <div className='Collapses'>
-      <Collapse key='0' title='Description' content={description} />
-      <Collapse key='1' title='Equipements' content={equipement} />
-    </div>
-  );
-}

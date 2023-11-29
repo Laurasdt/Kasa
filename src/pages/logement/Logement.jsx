@@ -6,7 +6,7 @@ import NotFound from '../notFound/NotFound';
 import Rating from '../../components/rating/Rating';
 import User from '../../components/User/User';
 import Tags from '../../components/tags/Tags';
-import { LogementCollapse } from '../../components/collapse/Collapse'; 
+import Collapse from '../../components/collapse/Collapse'; 
 import './logement.scss';
 
 function LogementPage() {
@@ -36,10 +36,11 @@ function LogementPage() {
 
       </div>
       
-      <LogementCollapse
-          description={logement ? logement.description : ""}
-          equipement={logement ? logement.equipments : ""}
-        />
+      <div className='Collapses'>
+      <Collapse key='0' title='Description' content={logement ? logement.description : ""} />
+      <Collapse key='1' title='Equipements' content={logement ? logement.equipments : ""} />
+    </div>
+    
     </section>
   );
 }
